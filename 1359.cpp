@@ -65,7 +65,8 @@ int getseq(int n) {
                 ans += mult(i, hash[n-2]);
             }
             else {
-                ans += mult(i, getseq(n-2));
+                hash[n-2] = getseq(n-2);
+                ans += mult(i, hash[n-2]);
             }
             ans = ans % m;
         }
