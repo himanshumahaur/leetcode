@@ -10,15 +10,6 @@ public:
 
         for(auto &i:mem) sort(i.second.begin(), i.second.end());
 
-        for(auto i:mem) {
-            cout << i.first << ": ";
-            for(auto j:i.second) {
-                cout << j << " ";
-            }
-            cout << endl;
-        }
-        
-
         int d = 0;
 
         int x = 0;
